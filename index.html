@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pinkora | Online Shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <a href="#home" class="logo">Vel<span>ora</span></a>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button id="cart-btn">🛒 Cart (<span id="cart-count">0</span>)</button>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h2>Enjoy premium & <br> <span>Stylish Collection</span></h2>
+      
+<p>
+  Discover the latest fashion trends with Pinkora. <br>
+  Explore our premium collection of stylish clothing, <br>
+  beautiful accessories, and elegant designs. 
+ 
+</p>
+
+      <a href="#shop" class="btn">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- Shop -->
+  <section id="shop" class="section">
+    <h4><span >Our Products</span></h4>
+    <div class="filters">
+      <input type="text" id="search" placeholder="Search products...">
+      <select id="category">
+        <option value="all">All Categories</option>
+        <option value="clothing">Clothing</option>
+        <option value="bags">Bags</option>
+        <option value="accessories">Accessories</option>
+      </select>
+    </div>
+    <div id="product-list" class="product-grid"></div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section dark">
+    <div>
+      <h2>About <span>US</span></h2>
+    <h1> Our <span>signature</span> Collection</h1>
+    <p>
+  Discover trendy fashion and accessories Pinkora. <br>
+      Find your perfect styleand shine  every day! <br>
+      Lorem ipsum dolor sit Lorem, ipsum dolor.
+</p>
+    </div>
+   
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <div class="contact-text">
+      <h2>Contact Us</h2>
+       <form action="">
+        
+       <h4>Full name</h4>: <input type="text"name="Name" placeholder="enter your name"> <br>
+       <h4>Mobile numbe</h4>: <input type="number" name="Mobile number" placeholder="enter your mbl number"><br>
+      <h4> Email</h4>: <input type="text" name="Email" placeholder="enter your Email"><br>
+       <h4>your message</h4>: <input type="text" name="your message" placeholder="write your message" id="form-message"> <br>
+        <button type="submit">Send message</button>
+       </form>
+      
+
+    </div>
+   
+    
+  </section>
+
+  <!-- Cart Panel -->
+  <aside id="cart-panel" class="cart-panel">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button id="close-cart">✕</button>
+    </div>
+    <div id="cart-items"></div>
+    <div class="cart-footer">
+      <strong>Total: ৳<span id="cart-total">0</span></strong>
+    </div>
+  </aside>
+
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
